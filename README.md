@@ -1,7 +1,44 @@
 # Semantic Segmentation
 ### Introduction
-In this project, you'll label the pixels of a road in images using a Fully Convolutional Network (FCN).
+In this project, I implemented the Fully Convolutional Network (FCN) from this paper -  [Fully Convolutional Networks for Semantic Segmentation](https://arxiv.org/pdf/1605.06211.pdf)..
+Then use the [Kitti Road dataset](http://www.cvlibs.net/datasets/kitti/eval_road.php) to train the my algorithm and finally apply it to the testing data set to see how good it identifies the road against the background.
 
+For this project I used the Udacity workspace to do the training work as my computer doesn't have GPU support.
+
+
+I tried different epoch sizes, below are a comparation of them:
+
+|       |       |       |       |      
+|---    |---    |---    |---    |
+|Epochs Size    | 5 |  15  | 45 |  
+|Cross_entrophy_loss    |0.57    |0.17   |0.07   |
+|Result |![Epochs5](./examples/epoch5_1.png)  |  ![Epochs15](./examples/epoch15_1.png) |  ![Epochs45](./examples/epoch45_1.png) |
+
+
+The hyperparameters chosed for training are:
+
+- epochs : 45
+- batch_size: 5
+- keep_prob : 0.5
+- learning_reate: 0.001
+- Optimizer: Adam
+
+
+I created a gif for the processed images as below:
+
+![RoadPixels](./examples/identifyRoad.gif)
+
+
+
+
+
+
+
+
+
+
+
+## Below are Copy From Udacity Course Repo
 ### Setup
 ##### GPU
 `main.py` will check to make sure you are using GPU - if you don't have a GPU on your system, you can use AWS or another cloud computing platform.
