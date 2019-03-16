@@ -33,11 +33,6 @@ I created a gif for the processed images as below:
 
 
 
-
-
-
-
-
 ## Below are Copy From Udacity Course Repo
 ### Setup
 ##### GPU
