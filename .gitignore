@@ -101,3 +101,9 @@ ENV/
 .mypy_cache/
 
 RUNS/
+
+###new added
+cmake-build-debug/
+CMakeLists.txt
+.idea/
+data/
